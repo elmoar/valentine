@@ -1,55 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive UI Example</title>
-  <style>
-    /* Add any additional CSS styles here */
-    .wrapper {
-      position: relative;
-    }
-
-    .no-btn {
-      position: absolute;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving button | Jessica</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-<div class="wrapper">
-  <p class="question">Do you accept my love?</p>
-  <img class="gif" src="placeholder.gif" alt="Placeholder GIF">
-  <button class="yes-btn">Yes</button>
-  <button class="no-btn">No</button>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const wrapper = document.querySelector(".wrapper");
-    const question = document.querySelector(".question");
-    const gif = document.querySelector(".gif");
-    const yesBtn = document.querySelector(".yes-btn");
-    const noBtn = document.querySelector(".no-btn");
-
-    yesBtn.addEventListener("click", () => {
-      question.innerHTML = "Oh glad you accepted. I love youu";
-      gif.src = "https://media1.tenor.com/m/oUMDFLGKE7sAAAAC/hyejinsgenre-cute-cats.gif";
-    });
-
-    noBtn.addEventListener("mouseover", () => {
-      const noBtnRect = noBtn.getBoundingClientRect();
-      const maxX = window.innerWidth - noBtnRect.width;
-      const maxY = window.innerHeight - noBtnRect.height;
-
-      const randomX = Math.floor(Math.random() * maxX);
-      const randomY = Math.floor(Math.random() * maxY);
-
-      noBtn.style.left = randomX + "px";
-      noBtn.style.top = randomY + "px";
-    });
-  });
-</script>
-
+    <div class="wrapper">
+        <h2 class="question">Will you be my valentine?</h2>
+        <img class="gif" alt="gif" src="https://media1.tenor.com/m/_hUq1BSUsiMAAAAC/cat-cute.gif"/>
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
