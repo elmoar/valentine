@@ -5,7 +5,7 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Oh glad you accepted. I love youu";
+  question.innerHTML = "Oh glad you accepted :D I love youu <333";
   gif.src =
     "https://media1.tenor.com/m/oUMDFLGKE7sAAAAC/hyejinsgenre-cute-cats.gif";
 });
